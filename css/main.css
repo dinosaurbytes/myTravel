@@ -12,3 +12,8 @@
   position: absolute;
   width: 100%
 }
+
+/* Social media section */
+.section-follow .fa-f4x{
+  margin: 5px 10px;
+}
