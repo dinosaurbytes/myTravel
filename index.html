@@ -42,7 +42,78 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 
+  <!-- Section Carousel -->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/photo3.jpg" alt="">
+        <div class="caption center-align">
+          <h2>Your Dream Vacation</h2>
+          <h5 class=" hide-on-small-only">Many vacation packages at your choice</h5>
+          <a href="#popular" class="deep-orange accent-2 btn btn-large">Packages</button></a>
+        </div>
+      </li>
+      <li>
+        <img src="img/photo5.jpg" alt="">
+        <div class="caption left-align">
+          <h2>Stunning Locations</h2>
+          <h5 class="hide-on-small-only">These locations will take your breath away!</h5>
+          <a href="#gallery" class="deep-orange accent-2 btn btn-large">Gallery</button></a>
+        </div>
+      </li>
+      <li>
+        <img src="img/photo1.jpg" alt="">
+        <div class="caption right-align">
+          <h2>Book Today</h2>
+          <h5 class="hide-on-small-only">Let us help you design your dream vacation</h5>
+          <a href="#contact" class="deep-orange accent-2 btn btn-large">Contact Us</button></a>
+        </div>
+      </li>
+    </ul>
+  </section>
 
+  <!-- Search Box -->
+  <section class="section section-search deep-orange accent-2 white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h4>Search Destinations</h4>
+          <div class="input-field">
+            <input class="white grey-text autocomplete" placeholder="Australia, Bahamas, Canada, etc.." type="text" id="autocomplete-input">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Icon Boxes Section -->
+  <section class="section section-icons grey lighten-4 center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large deep-orange-text text-accent-2">room</i>
+            <h4>Locations</h4>
+            <p>Choose your locations</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large deep-orange-text text-accent-2">directions_boat</i>
+            <h4>Cruises</h4>
+            <p>Tons of cruise options</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large deep-orange-text text-accent-2">beach_access</i>
+            <h4>Beaches</h4>
+            <p>Golden sandy beaches</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -51,7 +122,29 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
     $(document).ready(function () {
+      // Init Side nav
       $('.button-collapse').sideNav();
+
+      // Init Slider
+      $('.slider').slider({
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 4000
+      });
+
+      //autocomplete
+      $('.autocomplete').autocomplete({
+        data:{
+          "Australia": null,
+          "Bahamas": null,
+          "Canada": null,
+          "Dominican Republic": null,
+          "Europe": null,
+          "Hawaii": null,
+          "Japan": null,
+        }
+      })
 
     });
   </script>
