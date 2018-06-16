@@ -2,8 +2,9 @@
 
 **Version 1.0.0**
 
-This a front end UI travel site landing page created using the materialize framework.
-
+This a front end UI travel site landing page created using the materialize framework.  
+  
+Programs: HTML, CSS, Bootstrap  
 
 Features:  
   Navigation - uses scrollSpy.  
